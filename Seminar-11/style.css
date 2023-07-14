@@ -1,0 +1,202 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Lato', sans-serif;
+}
+.center {
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style-type: none;
+}
+.product-title {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 36px;
+    color: #222222;
+    margin: 150px 0 6px 0;
+    text-align: center;
+}
+.product-info-txt {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #9F9F9F;
+    margin: 0 0 48px 0;
+    text-align: center;
+}
+.product-content {
+    margin: 0 0 48px 0;
+}
+.product-content-img {
+    position: relative;
+}
+.products-item {
+    display: block;
+    max-width: 360px;
+    position: relative;
+    background: #F8F8F8;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+.products-item:hover .products-item-btn {
+    display: flex
+  }
+  .products-item:hover .products-item-btn:hover {
+    background-color: #ccc;
+    color: #000;
+    border: 1px solid #000;
+  }
+  .products-item:hover .products-item-btn:hover svg {
+    fill: #000;
+  }
+  .products-item:hover .products-item-btn:active {
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+  }
+  .products-item:hover .products-item-btn:active svg {
+    fill: #fff;
+  }
+  .products-item:hover .product-content-img::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: rgba(58, 56, 56, 0.86);
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+.product-content-list {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(30%, 360px));
+    gap: 30px;
+}
+.product-content-item {
+    display: block;
+    max-width: 360px;
+    background: #F8F8F8;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+.background {
+    background-color: #F7E4E2;
+}
+.products-item-photo {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+.product-content-info {
+    padding: 25px 18px 20px 18px;
+    box-sizing: border-box;
+    text-align: left;
+    background-color: #F8F8F8;
+}
+.product-content-title {
+    display: block;
+    margin: 0 0 12px 0;
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    color: #000000;
+}
+.product-content-txt {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #5D5D5D;
+    margin: 0 0 18px 0;
+}
+.product-price {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #F16D7F;
+    margin: 0 0 19px 0;
+}
+.products-item-btn {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 160px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #FFFFFF;
+    background: transparent;
+    text-align: center;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+    position: absolute;
+    top: 30%;
+    left: calc(50% - 80px);
+  }
+  .products-item-btn svg {
+    fill: #fff;
+    margin: 0 11px 0 0;
+  }
+  .products-btn {
+    display: block;
+    width: 100%;
+    max-width: 211px;
+    margin: 0 auto;
+    padding: 14.5px;
+    background-color: #fff;
+    border: 2px solid #F26376;
+    box-sizing: border-box;
+    color: #F26376;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19.2px;
+    text-align: center;
+    word-break: break-all;
+  }
+  .content-btn {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 0 95px 0;
+}
+.content-button {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #F26376;
+    border: 1px solid #FF6A6A;
+    display: block;
+    max-width: 211px;
+    width: 100%;
+    min-height: 47px;
+    text-align: center;
+    padding: 14px;
+    box-sizing: border-box;
+    background-color: #FFFFFF;
+    transition: background-color 1s ease;
+}
+.content-button:hover {
+    color: #FFFFFF;
+    background-color: #F26376;
+}
+.content-button:active {
+    color: #F26376;
+    background-color: #FFFFFF;
+}
